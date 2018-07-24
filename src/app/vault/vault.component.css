@@ -1,0 +1,38 @@
+.vault-wrapper {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+
+.vault-wrapper .treasure {
+  position: absolute;
+  left: 79px;
+  top: 28px;
+  border-radius: 231px;
+  height: 355px;
+  width: 355px;
+  background: 5f5d5d;
+  text-align: center;
+}
+
+.vault-wrapper .treasure-img {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  border-radius: 125px;
+  margin: 50px;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.treasure-img.show {
+  opacity: 1;
+}
+
+.treasure-img.hide {
+  opacity: 0;
+}

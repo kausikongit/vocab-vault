@@ -1,0 +1,16 @@
+<div class="header-panel">
+  <div class="button_wrap">
+    <a class="glass" (click)='playHelpAudio()'>?</a>
+    <a class="glass" (click)='closeApp()' >X</a>
+  </div>
+</div>
+<div class="body-panel">
+  <div class="inst-wrapper">
+    <a class='glass' (click)='playInstAudio()'><fa-icon [icon]='faVolumeUp'></fa-icon></a>
+    <span class="inst-text">Read each sentence. Choose the vocabulary words that best completes the sentence.</span>
+  </div>
+  <app-question></app-question>
+  <app-vault></app-vault>
+  <app-option></app-option>
+</div>
+

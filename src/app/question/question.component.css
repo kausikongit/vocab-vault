@@ -1,0 +1,13 @@
+
+.question{
+    height: 65px;
+    background: white;
+    width: 90%;
+    border: 5px solid #656464;
+    margin: 3px 0px 0px 29px;
+  }
+  
+.questiontext{
+    font-size: 21px;
+    padding-left: 20px;
+}

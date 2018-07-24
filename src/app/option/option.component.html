@@ -1,0 +1,12 @@
+<div class='option-wrapper'>
+  <ul>
+    <li class='option' id='question.qid' *ngFor='let opt of question.options | randomOrder' (click)='setOptionSelected(opt)'>
+      <a [ngClass]="{'play': true, 'white': selectedOption != opt, 'yellow': selectedOption == opt}"><fa-icon [icon]='faCaretRight'></fa-icon></a>
+      <span [ngClass]="{'red' : showAnswer == true && selectedOption == opt, 'green': showAnswer == true && correctAnswer == opt}" >{{opt}}</span>
+    </li>
+  </ul>
+  <div class='submit-panel'>
+    <a [ngClass]="{'glass': true, 'disabled': disableOK}" (click)="submitAns()">OK</a>
+    <a class='glass' (click)="resetApp()">Reset</a>
+  </div>
+</div>

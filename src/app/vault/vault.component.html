@@ -1,0 +1,9 @@
+<div class='vault-wrapper'>
+  <img [src]='basePath + imgName' alt="vault">
+  <div class='treasure'>
+    <img [ngClass]="['treasure-img', (groupIndex == imgGroup.length ? 'show' : 'hide')]" src='assets/img/treasure2.jpg' alt="vault">
+  </div>
+  <div *ngFor="let img of imgGroup[groupIndex]" [hidden]="true">
+    <img [src]='basePath + img' alt="vault" [hidden]="true">
+  </div>
+</div>
